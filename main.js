@@ -15,8 +15,8 @@ function translateTxt() {
   let type = encodedTxt && !decodedTxt ? 'encode' : 'decode'
   let target = document.querySelector(type == 'encode' ? '#dcdtxt' : '#ncdtxt')
   let sourceTxt = type == 'encode' ? encodedTxt : decodedTxt
-  let baseLetter = type == 'encode' ? 'vwxyzabcdefghijklmnopqrstu' : 'abcdefghijklmnopqrstuvwxyj' 
-  let bufferLetter = type == 'encode' ?  'abcdefghijklmnopqrstuvwxyj' : 'vwxyzabcdefghijklmnopqrstu'
+  let baseLetter = type == 'encode' ? 'vwxyzabcdefghijklmnopqrstu' : 'abcdefghijklmnopqrstuvwxyz' 
+  let bufferLetter = type == 'encode' ?  'abcdefghijklmnopqrstuvwxyz' : 'vwxyzabcdefghijklmnopqrstu'
 
   target.value = crack(sourceTxt, baseLetter, bufferLetter)
 }

@@ -16,9 +16,15 @@
 
 <body>
   <div class="content">
+    <label for="encoded">Kata</label>
     <textarea name="encoded" id="ncdtxt" cols="30" rows="10"></textarea>
-    <input type="button" onclick="translateTxt()" value="translate">
-    <input type="button" onclick="clearTxt()" value="reset">
+    
+    <div class="button">
+      <a href="javascript:void(0)" class="translate" onclick="translateTxt()">translate</a>
+      <a href="javascript:void(0)" class="reset" onclick="clearTxt()">reset</a>
+    </div>
+    
+    <label for="decoded">Sandi</label>
     <textarea name="decoded" id="dcdtxt" cols="30" rows="10"></textarea>
   </div>
   <!-- Project -->
