@@ -27,7 +27,7 @@ function crack(sourceTxt, baseLetter, bufferLetter) {
     let arrLetter = []
     word.split('').forEach(function(letter){
       if(baseLetter.includes(letter.toLowerCase())) {
-        arrLetter.push(baseLetter[bufferLetter.indexOf(letter.toLowerCase())])
+        arrLetter.push(baseLetter[bufferLetter.indexOf(letter.toLowerCase())].toUpperCase())
       } else {
         arrLetter.push(letter)
       }
